@@ -11,21 +11,21 @@
 <body>
 
   <header id="home" class="main-header clearfix">
-    <nav class="container">
-      <h1 id="top" class="name">Andrew Smith</a></h1>
-      <ul class="main-nav">
+    <nav class="main-nav clearfix">
+      <h1 id="top" class="name">Andrew Smith</h1>
+      <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="profile">
+    <div class="profile clearfix">
       <img class="profile-picture" src="img/responsive-layout-profile.png" alt="Profile picture">
       <p class="intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put my skills to use!</p>
     </div>
   </header>
-  <div class="container portfolio">
-    <div class="wrapper">
+  <div class="wrapper">
+    <div class="portfolio">
       <h3 id="portfolio">Portfolio</h3>
       <ul class="gallery clearfix">
         <li>
@@ -71,13 +71,17 @@
     </ul>
   </div>
   <div class="footer-nav clearfix">
-    <ul>
+    <ul class="mobile-nav">
       <li class="footer-name">Andrew Smith</li>
-      <li class="mobile-nav"><a href="#top">Back to top</a></li>
-      <li class="large-nav"><a href="#home">Home</a></li>
-      <li class="large-nav"><a href="#portfolio">Portfolio</a></li>
-      <li class="large-nav"><a href="#contact">Contact</a></li>
+      <li class="back-nav"><a href="#top">Back to top</a></li>
     </ul>
+    <div class="large-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 </body>

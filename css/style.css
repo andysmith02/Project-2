@@ -8,30 +8,15 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: #FAFAFA;
+  color: #4A4A4A;
   padding: 0;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-}
-
-/* ---- Colors ---- */
-
-body {
-  background: #FAFAFA;
-}
-
-a {
   color: #4A4A4A;
-}
-
-h1, {
-  color: #4A4A4A;
-}
-
-.portfolio {
-  background: white;
 }
 
 /* =================================
@@ -52,10 +37,12 @@ h1, {
 
 .main-nav a {
   text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  padding: 10px 15px;
 }
 
-.name,
-.main-nav a {
+.name {
   font-weight: bold;
   display: block;
   padding: 10px 15px;
@@ -71,26 +58,25 @@ h1, {
 /* ---- Layout Containers ---- */
 
 .main-header {
+  text-align: center;
   padding: 15px;
 }
 
-.main-header,
-.portfolio,
-.main-footer {
-  text-align: center;
+.intro {
+  color: teal;
+  font-size: 1.25em;
 }
 
 .wrapper {
-  max-width: 940px;
-  margin: 0 5%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 5%;
+  background: #fff;
 }
 
 .portfolio {
+  text-align: center;
   padding: 30px 0;
-}
-
-.portfolio img {
-  width: 100%;
 }
 
 .portfolio h3 {
@@ -98,8 +84,13 @@ h1, {
   text-transform: uppercase;
 }
 
-.portfolio img,
 .gallery {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.gallery img {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -110,11 +101,12 @@ h1, {
 }
 
 .gallery p {
-  padding: 10px 18px;
+  padding: 0 18px;
   line-height: 1.5;
 }
 
 .main-footer {
+  text-align: center;
   padding: 30px;
 }
 
@@ -131,20 +123,18 @@ h1, {
 
 .footer-nav {
   border-top: 1px solid lightgrey;
-  padding: 30px 0;
+  padding: 30px 0 0;
+  font-weight: bold;
 }
 
 .footer-name {
   float: left;
+  display: block;
 }
 
-.footer-name li,
-.mobile-nav li {
-  display: inline-block;
-}
-
-.mobile-nav {
+.back-nav {
   float: right;
+  display: block;
 }
 
 .large-nav {
@@ -155,6 +145,10 @@ h1, {
 ==================================== */
 
 @media (min-width: 768px) {
+
+  a:hover {
+    color: tomato;
+  }
 
   .main-header {
     margin: 0 auto;
@@ -167,10 +161,13 @@ h1, {
 
   .main-nav li a {
     background: transparent;
+    margin: 0;
   }
 
   .profile {
     margin: 30px auto 0;
+    text-align: left;
+    padding: 30px 0;
   }
 
   .profile-picture {
@@ -186,21 +183,13 @@ h1, {
     margin: 0;
   }
 
-  .wrapper {
-    margin: 0 auto;
-  }
-
   .gallery li {
     float: left;
-    width: 45%;
-    margin: 2.5%;
+    width: 50%;
+    padding: 1.25%;
   }
 
-  .footer-name {
-    float: left;
-  }
-
-  .mobile-nav {
+  .back-nav {
     display: none;
   }
 
@@ -208,13 +197,49 @@ h1, {
     display: block;
   }
 
-  .large-nav {
+  .large-nav ul {
     float: right;
   }
 
+  .large-nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
   .clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .name {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-header ul {
+    float: right;
+  }
+
+  .main-nav {
+    padding: 20px 0;
+    margin-top: 10px;
+  }
+
+  .profile {
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  .gallery li {
+    width: 33.333%;
+  }
+
+  .gallery li:nth-child(3n+1) {
+    clear: left;
   }
 }
