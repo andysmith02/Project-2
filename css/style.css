@@ -105,7 +105,23 @@ a {
   line-height: 1.5;
 }
 
-.main-footer {
+.skills {
+  text-align: center;
+}
+
+.skills ul li {
+  display: inline-block;
+  border: 2px solid teal;
+  border-radius: 5px;
+  background: teal;
+  color: #fff;
+  width: 90px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  padding: 2px;
+}
+
+.contact {
   text-align: center;
   padding: 30px;
 }
@@ -114,16 +130,24 @@ a {
   text-transform: uppercase;
 }
 
-.contact-info {
-  list-style: none;
+.contact ul {
+  text-align: center;
   line-height: 2;
-  word-spacing: 30px;
+  word-spacing: 25px;
   padding-bottom: 30px;
 }
 
-.footer-nav {
+.contact li {
+  color: darkgrey;
+}
+
+.contact a {
+  color: darkslategrey;
+}
+
+.main-footer {
   border-top: 1px solid lightgrey;
-  padding: 30px 0 0;
+  padding: 30px;
   font-weight: bold;
 }
 
