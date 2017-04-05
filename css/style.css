@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #FAFAFA;
+  background: #ffebcd;
   color: #4A4A4A;
   padding: 0;
   margin: 0;
@@ -26,7 +26,8 @@ a {
 /* ---- Navigation ---- */
 
 .main-nav {
-  padding-left: 0;
+  padding: 10px;
+  background: rgba(0, 128, 128, .5);
 }
 
 .main-nav li a {
@@ -149,6 +150,7 @@ a {
   border-top: 1px solid lightgrey;
   padding: 30px;
   font-weight: bold;
+  background: rgba(0, 128, 128, .5);
 }
 
 .footer-name {
@@ -183,6 +185,10 @@ a {
     display: inline-block;
   }
 
+  .main-nav {
+    padding: 10px;
+  }
+
   .main-nav li a {
     background: transparent;
     margin: 0;
@@ -211,6 +217,11 @@ a {
     float: left;
     width: 50%;
     padding: 1.25%;
+  }
+
+  .main-footer {
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .back-nav {
@@ -250,7 +261,7 @@ a {
   }
 
   .main-nav {
-    padding: 20px 0;
+    padding: 20px;
     margin-top: 10px;
   }
 
