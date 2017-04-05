@@ -150,3 +150,71 @@ h1, {
 .large-nav {
   display: none;
 }
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+  .main-header {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .main-header ul li {
+    display: inline-block;
+  }
+
+  .main-nav li a {
+    background: transparent;
+  }
+
+  .profile {
+    margin: 30px auto 0;
+  }
+
+  .profile-picture {
+    float: right;
+    max-width: 38%;
+    padding: 0;
+  }
+
+  .intro {
+    float: left;
+    max-width: 56%;
+    font-size: 1.1em;
+    margin: 0;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  .gallery li {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+  }
+
+  .footer-name {
+    float: left;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .large-nav {
+    display: block;
+  }
+
+  .large-nav {
+    float: right;
+  }
+
+  .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+}
